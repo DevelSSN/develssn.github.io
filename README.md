@@ -1,10 +1,3 @@
----
-layout: default
-title: DevelSSN - Developer Portfolio
----
-
-# Welcome to DevelSSN's GitHub Portfolio
-
 Hello! I'm **DevelSSN**, a passionate developer exploring new technologies and building awesome projects. Here you'll find a collection of my work and contributions.
 
 ---
