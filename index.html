@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+
+  <!-- JetBrains Mono (nice dev font) -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+      --muted: #8b949e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "JetBrains Mono", monospace;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 720px;
+      padding: 24px;
+    }
+
+    .prompt::before {
+      content: "> ";
+      color: var(--accent);
+    }
+
+    h1 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--accent);
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .block {
+      margin-top: 1.5rem;
+    }
+
+    /* blinking cursor */
+    .cursor::after {
+      content: "_";
+      margin-left: 4px;
+      animation: blink 1s steps(2, start) infinite;
+    }
+
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        align-items: flex-start;
+        padding-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1 class="prompt">Shashank Shantharam Nayak<span class="cursor"></span></h1>
+
+    <p>Developer. Builder. Git fan.</p>
+
+    <div class="block">
+      <p class="prompt">about</p>
+      <p class="muted">
+       I enjoy coding in Java. A big Java fan! 
+       I am currently working on Quarkus and Microservices programs.
+      </p>
+    </div>
+
+    <div class="block">
+      <p class="prompt">links</p>
+      <p>
+        <a href="https://github.com/DevelSSN">github</a><br>
+        <a href="#">projects</a><br>
+        <a href="#">contact</a>
+      </p>
+    </div>
+
+    <div class="block">
+      <p class="prompt">status</p>
+      <p class="muted">building something new...</p>
+    </div>
+  </main>
+</body>
+</html>
